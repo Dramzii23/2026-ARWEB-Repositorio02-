@@ -5,36 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown HTML</title>
-
     <style>
         #wrapper {
-            border: 1px black solid;
-            padding: 1em 2em;
-            width: 55%;
+            border: 1px solid black;
+            width: 60%;
             margin: 0 auto;
+            padding: 1em 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            ;
         }
+
         img {
-    width: calc(100% + 4em);
-    margin: 0 -2em;
-}
+            width: 100%;
+        }
+
+        header,
+        main,
+        footer {}
+
+        header {
+            height: 8em;
+            background-color: gainsboro;
+        }
+        nav li {
+            /* border: 1px solid black;*/
+            display: block;
+
+            padding: .5em;
+            background-color: rgb(202, 162, 3);
+        }
+        nav li:hover {
+            background-color: rgb(230, 103, 12);
+            margin: -.5em;
+            padding: 1em;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(85, 102, 231);
+            
+
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
     </style>
 
 </head>
 
 <body>
     <div id="wrapper">
-        <h1>Ejercicio 02 - DOM</h1>
-        <h2>Introducción</h2>
-        <p>Prepare y <em>Italicas</em> y <strong> contextualiza al lector</strong> acerca del <em><strong>tema que va a
-                    trabajar en este texto.</strong></em></p>
-        <img  src="/Ejercicio 02 -  Markdown/img/Picture1 - DOM.png" alt="Imágen de un DOM">
-        <h2>Síntesis</h2>
-        <p>Una sección de dos a tres párrafos (o más de 350 palabras) que condense y resuma la información que se vio en
-            clase acerca del tema del Modelo de objeto del documento (DOM, por sus siglas en ingles)</p>
-        <h2>Reflexión</h2>
-        Exprese con sus propias palabras, que le parece útil acerca del tema., en al menos un párrafo.
-        <h2>Conclusión</h2>
-        <p>Elabore aquí, un pequeño texto para concluir lo que se sintetizo y reflexiono acerca del tema del DOM.</p>
+        <header>
+
+        </header>
+        <nav>
+            <ul>
+                <a href="">
+                    <li>Elemento 1</li>
+                </a>
+                <a href="">
+                    <li>Elemento 2</li>
+                </a>
+                <a href="">
+                    <li>Elemento 3</li>
+                </a><a href="">
+                    <li>Elemento 4</li>
+                </a>
+   
+            </ul>
+        </nav>
+        <main>
+
+            <h1>Ejercicio 02 - DOM</h1>
+            <hr>
+            <h2>Introducción</h2>
+            <hr>
+            <p>Prepare y <strong>contextualiza al lector</strong> acerca del tema que va a trabajar en este texto.</p>
+
+            <img src="/Ejercicio 02 -  Markdown/img/Picture1 - DOM.png" alt="imagen representativa del DOM">
+
+            <div>
+                <h2>Síntesis</h2>
+                <p>Una sección de dos a tres párrafos (o más de 350 palabras) que condense y resuma la información que
+                    se
+                    vio en clase acerca del tema del Modelo de objeto del documento (DOM, por sus siglas en ingles)</p>
+
+                <h2> Reflexión</h2>
+                <p>Exprese con sus propias palabras, que le parece útil acerca del tema., en al menos un párrafo.</p>
+                <h2> Conclusión</h2>
+                <p>Elabore aquí, un pequeño texto para concluir lo que se sintetizo y reflexiono acerca del tema del
+                    DOM.
+                </p>
+            </div>
+        </main>
+        <footer>
+            FOOTER
+        </footer>
     </div>
 </body>
 
